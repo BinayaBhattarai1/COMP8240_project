@@ -1,0 +1,51 @@
+collected_at,outlet,items_in_feed,new_articles,status
+2026-10-14T11:06:27+00:00,BBC,0,0,EMPTY (<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)>)
+2026-10-14T11:06:27+00:00,Guardian,0,0,EMPTY (<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)>)
+2026-10-14T11:06:27+00:00,AlJazeera,0,0,EMPTY (<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)>)
+2026-10-14T11:06:27+00:00,DW,0,0,EMPTY (<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)>)
+2026-10-14T11:06:27+00:00,NPR,0,0,EMPTY (<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)>)
+2026-10-14T11:10:18+00:00,BBC,24,24,ok
+2026-10-14T11:10:18+00:00,Guardian,45,45,ok
+2026-10-14T11:10:18+00:00,AlJazeera,25,25,ok
+2026-10-14T11:10:18+00:00,DW,13,13,ok
+2026-10-14T11:10:18+00:00,NPR,10,10,ok
+2026-10-18T09:05:33+00:00,BBC,27,27,ok
+2026-10-18T09:05:33+00:00,Guardian,45,43,ok
+2026-10-18T09:05:33+00:00,AlJazeera,25,25,ok
+2026-10-18T09:05:33+00:00,DW,12,12,ok
+2026-10-18T09:05:33+00:00,NPR,10,10,ok
+2026-10-18T09:20:45+00:00,BBC,27,0,ok
+2026-10-18T09:20:45+00:00,Guardian,45,1,ok
+2026-10-18T09:20:45+00:00,AlJazeera,25,0,ok
+2026-10-18T09:20:45+00:00,DW,12,0,ok
+2026-10-18T09:20:45+00:00,NPR,10,0,ok
+2026-10-22T07:47:06+00:00,BBC,37,37,ok
+2026-10-22T07:47:06+00:00,Guardian,45,44,ok
+2026-10-22T07:47:06+00:00,AlJazeera,25,25,ok
+2026-10-22T07:47:06+00:00,DW,11,11,ok
+2026-10-22T07:47:06+00:00,NPR,10,10,ok
+2026-10-24T07:34:04+00:00,BBC,27,27,ok
+2026-10-24T07:34:04+00:00,Guardian,45,35,ok
+2026-10-24T07:34:04+00:00,AlJazeera,25,25,ok
+2026-10-24T07:34:04+00:00,DW,0,0,"FAILED: ConnectTimeout: HTTPSConnectionPool(host='rss.dw.com', port=443): Max retries exceeded with url: /rdf/rss-en-world (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x104a4f830>, 'Connection to rss.dw.com timed out. (connect timeout=30)'))"
+2026-10-24T07:34:04+00:00,NPR,10,10,ok
+2026-10-26T03:37:22+00:00,BBC,32,25,ok
+2026-10-26T03:37:22+00:00,Guardian,45,33,ok
+2026-10-26T03:37:22+00:00,AlJazeera,25,25,ok
+2026-10-26T03:37:22+00:00,DW,11,11,ok
+2026-10-26T03:37:22+00:00,NPR,10,10,ok
+2026-10-28T03:53:32+00:00,BBC,27,27,ok
+2026-10-28T03:53:32+00:00,Guardian,45,39,ok
+2026-10-28T03:53:32+00:00,AlJazeera,25,25,ok
+2026-10-28T03:53:32+00:00,DW,10,6,ok
+2026-10-28T03:53:32+00:00,NPR,10,10,ok
+2026-11-01T06:12:10+00:00,BBC,28,27,ok
+2026-11-01T06:12:10+00:00,Guardian,45,39,ok
+2026-11-01T06:12:10+00:00,AlJazeera,25,25,ok
+2026-11-01T06:12:10+00:00,DW,10,10,ok
+2026-11-01T06:12:10+00:00,NPR,10,10,ok
+2026-11-08T06:50:36+00:00,BBC,25,25,ok
+2026-11-08T06:50:36+00:00,Guardian,45,43,ok
+2026-11-08T06:50:36+00:00,AlJazeera,25,25,ok
+2026-11-08T06:50:36+00:00,DW,13,13,ok
+2026-11-08T06:50:36+00:00,NPR,10,10,ok

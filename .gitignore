@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+.venv/
+venv/
+data/bbc_raw/
+data/trump_tweets_raw/
+*.html
