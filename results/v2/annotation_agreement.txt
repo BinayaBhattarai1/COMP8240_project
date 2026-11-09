@@ -1,0 +1,21 @@
+Inter-annotator agreement (v2 event labels)
+============================================
+Articles labelled by both annotators: 75
+Article pairs compared:               2775
+'Same event' pairs  A: 92  B: 88  both: 88
+Cohen's kappa (pairwise same-event):  0.977
+Adjusted Rand Index (A vs B):         0.977
+
+Disagreements (first 15) -- discuss these and refine the guideline:
+  [A says SAME, B says DIFFERENT]
+     Guardian  Mystery over source of Ebola infection in Nigeria fuels concern about spread of virus
+     AlJazeera WHO announces start of Ebola vaccine clinical trial in DR Congo
+  [A says SAME, B says DIFFERENT]
+     NPR       Authorities investigating whether first Kenya and Nigeria Ebola cases crossed paths
+     AlJazeera WHO announces start of Ebola vaccine clinical trial in DR Congo
+  [A says SAME, B says DIFFERENT]
+     DW        Uganda says it has no active Ebola cases, but infections in Kenya and Nigeria are promptin
+     AlJazeera WHO announces start of Ebola vaccine clinical trial in DR Congo
+  [A says SAME, B says DIFFERENT]
+     AlJazeera WHO announces start of Ebola vaccine clinical trial in DR Congo
+     AlJazeera Kenya announces second Ebola death, says ‘no evidence’ of community spread

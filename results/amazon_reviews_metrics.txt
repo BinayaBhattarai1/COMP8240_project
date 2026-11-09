@@ -1,0 +1,11 @@
+Amazon product reviews -- new-domain generalisation test
+=======================================================
+Documents used:        2000
+Topics found:          42
+Average NPMI coherence: 0.1161
+Topic diversity:        0.8690
+Seed:                   3
+
+Context: commerce-domain, short informal text -- compare against
+the 20 Newsgroups result to see whether BERTopic's performance
+holds up outside the news/political domains used in the paper.

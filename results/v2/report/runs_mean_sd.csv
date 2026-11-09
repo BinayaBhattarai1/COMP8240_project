@@ -1,0 +1,8 @@
+config,seeds,topics,outliers,NPMI,diversity
+bertopic_full_mts5,3,40.0 ± 1.7,0.22 ± 0.03,0.234 ± 0.030,0.918 ± 0.010
+bertopic_capped_mts5,3,43.3 ± 1.5,0.25 ± 0.04,0.136 ± 0.016,0.919 ± 0.005
+bertopic_capped_mts3,1,74.0,0.19,0.141,0.903
+bertopic_capped_mts10,1,17.0,0.21,0.130,0.935
+bertopic_capped_mts5_mpnet,3,44.7 ± 2.1,0.19 ± 0.01,0.133 ± 0.023,0.921 ± 0.015
+lda_full_k40,3,40.0 ± 0.0,0.00 ± 0.00,-0.047 ± 0.009,0.694 ± 0.009
+lda_capped_k43,3,43.0 ± 0.0,0.00 ± 0.00,-0.253 ± 0.007,0.657 ± 0.019

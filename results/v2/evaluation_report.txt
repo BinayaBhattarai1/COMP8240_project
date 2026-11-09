@@ -1,0 +1,51 @@
+v2 evaluation: events or outlets?
+==================================
+
+A. OUTLET effect (all articles, outliers excluded)
+   run                                        topics  outl.    NMI  shuf.       p
+   bertopic_capped_mts10_seed1                    17    21%  0.062  0.024  0.0005
+   bertopic_capped_mts3_seed1                     74    19%  0.125  0.083  0.0005
+   bertopic_capped_mts5_seed1                     45    24%  0.110  0.059  0.0005
+   bertopic_capped_mts5_seed1_mpnet               44    21%  0.110  0.056  0.0005
+   bertopic_capped_mts5_seed2                     43    29%  0.099  0.061  0.0005
+   bertopic_capped_mts5_seed2_mpnet               47    19%  0.106  0.058  0.0005
+   bertopic_capped_mts5_seed3                     42    21%  0.102  0.054  0.0005
+   bertopic_capped_mts5_seed3_mpnet               43    18%  0.108  0.053  0.0005
+   bertopic_full_mts5_seed1                       42    19%  0.098  0.053  0.0005
+   bertopic_full_mts5_seed2                       39    22%  0.093  0.051  0.0005
+   bertopic_full_mts5_seed3                       39    24%  0.101  0.053  0.0005
+   lda_capped_k43_seed1                           43     0%  0.044  0.041  0.2254
+   lda_capped_k43_seed2                           43     0%  0.041  0.041  0.4668
+   lda_capped_k43_seed3                           43     0%  0.044  0.041  0.2089
+   lda_full_k40_seed1                             40     0%  0.047  0.039  0.0215
+   lda_full_k40_seed2                             40     0%  0.044  0.039  0.1019
+   lda_full_k40_seed3                             40     0%  0.039  0.038  0.4723
+
+B. EVENT tracking (268 labelled articles, 148 events)
+   run                                        NMI ev    ARI   SE/XO   DE/SO   DE/XO
+   bertopic_capped_mts10_seed1                 0.756  0.422     91%      5%      3%
+   bertopic_capped_mts3_seed1                  0.901  0.600     55%      1%      1%
+   bertopic_capped_mts5_seed1                  0.878  0.668     87%      2%      1%
+   bertopic_capped_mts5_seed1_mpnet            0.857  0.574     78%      2%      1%
+   bertopic_capped_mts5_seed2                  0.881  0.681     86%      1%      1%
+   bertopic_capped_mts5_seed2_mpnet            0.856  0.566     77%      3%      1%
+   bertopic_capped_mts5_seed3                  0.863  0.632     88%      2%      1%
+   bertopic_capped_mts5_seed3_mpnet            0.834  0.536     85%      4%      2%
+   bertopic_full_mts5_seed1                    0.850  0.561     89%      3%      2%
+   bertopic_full_mts5_seed2                    0.861  0.617     89%      2%      2%
+   bertopic_full_mts5_seed3                    0.866  0.644     89%      2%      1%
+   lda_capped_k43_seed1                        0.698  0.075     13%      2%      2%
+   lda_capped_k43_seed2                        0.723  0.159     24%      2%      2%
+   lda_capped_k43_seed3                        0.697  0.099     16%      3%      2%
+   lda_full_k40_seed1                          0.719  0.173     25%      2%      3%
+   lda_full_k40_seed2                          0.737  0.251     42%      3%      3%
+   lda_full_k40_seed3                          0.716  0.179     30%      3%      3%
+
+   SE/XO = same event, different outlets: share of pairs in the same topic (higher = tracks events)
+   DE/SO = different events, same outlet: share grouped together
+   DE/XO = different events, different outlets: share grouped together (background rate)
+   If DE/SO is well above DE/XO, outlet style is still pulling articles together.
+   Pair counts: SE/XO 438, DE/SO 8788, DE/XO 26415
+
+Compare 'full' vs 'capped' runs: if the outlet NMI drops when text length is
+equalised, part of the v1 outlet effect was a length/format artefact.

@@ -78,6 +78,11 @@ def main():
         f.write("the 20 Newsgroups result to see whether BERTopic's performance\n")
         f.write("holds up outside the news/political domains used in the paper.\n")
 
+    update_sweep_summary("results/amazon_reviews_sweep_summary.csv", {
+        "n_docs": len(docs), "seed": args.seed, "nr_topics_found": len(topic_info) - 1,
+        "npmi_coherence": round(coherence["average"], 4),
+        "topic_diversity": round(diversity, 4)}, key_cols=["n_docs", "seed"])
+
     print("\nDone. See results/amazon_reviews_topics.csv and "
           "results/amazon_reviews_metrics.txt")
 

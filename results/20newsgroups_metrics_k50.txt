@@ -1,0 +1,8 @@
+20 Newsgroups reproduction -- evaluation metrics (nr_topics=k50)
+============================================================
+Documents used:        18211
+Topics requested:      50
+Topics found:          49
+Average NPMI coherence: 0.2651
+Topic diversity:        0.9163
+Seed:                   3

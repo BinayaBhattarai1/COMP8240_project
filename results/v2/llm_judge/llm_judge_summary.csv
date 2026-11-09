@@ -1,0 +1,6 @@
+run,judge,topics_judged,mean_rating,share_rating_3,share_EVENT,share_THEME,share_MIXED
+bertopic_capped_mts5_seed1,hf:Qwen/Qwen2.5-3B-Instruct,45,2.333,0.4,0.511,0.489,0.0
+bertopic_capped_mts5_seed1_mpnet,hf:Qwen/Qwen2.5-3B-Instruct,44,2.364,0.409,0.341,0.659,0.0
+bertopic_full_mts5_seed1,hf:Qwen/Qwen2.5-3B-Instruct,42,2.452,0.5,0.429,0.571,0.0
+lda_capped_k43_seed1,hf:Qwen/Qwen2.5-3B-Instruct,43,2.023,0.163,0.047,0.884,0.07
+lda_full_k40_seed1,hf:Qwen/Qwen2.5-3B-Instruct,40,2.25,0.275,0.25,0.675,0.075

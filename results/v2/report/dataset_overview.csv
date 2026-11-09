@@ -1,0 +1,10 @@
+Property,Value
+Articles (clean),874
+"Articles (raw, before cleaning)",897
+Outlets,5
+Days with articles,30
+First / last day,2026-10-08 / 2026-11-08
+Mean words per article (full),60.4
+Mean words per article (capped),32.5
+Collection runs,10
+Feed fetches that failed,6

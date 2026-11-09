@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lrrrrr}
+\hline
+config & seeds & topics & outliers & NPMI & diversity \\
+\hline
+bertopic\_full\_mts5 & 3 & 40.0 ± 1.7 & 0.22 ± 0.03 & 0.234 ± 0.030 & 0.918 ± 0.010 \\
+bertopic\_capped\_mts5 & 3 & 43.3 ± 1.5 & 0.25 ± 0.04 & 0.136 ± 0.016 & 0.919 ± 0.005 \\
+bertopic\_capped\_mts3 & 1 & 74.0 & 0.19 & 0.141 & 0.903 \\
+bertopic\_capped\_mts10 & 1 & 17.0 & 0.21 & 0.130 & 0.935 \\
+bertopic\_capped\_mts5\_mpnet & 3 & 44.7 ± 2.1 & 0.19 ± 0.01 & 0.133 ± 0.023 & 0.921 ± 0.015 \\
+lda\_full\_k40 & 3 & 40.0 ± 0.0 & 0.00 ± 0.00 & -0.047 ± 0.009 & 0.694 ± 0.009 \\
+lda\_capped\_k43 & 3 & 43.0 ± 0.0 & 0.00 ± 0.00 & -0.253 ± 0.007 & 0.657 ± 0.019 \\
+\hline
+\end{tabular}
+\caption{Topic quality on the constructed dataset (mean ± sd over seeds).}
+\label{tab:v2quality}
+\end{table}

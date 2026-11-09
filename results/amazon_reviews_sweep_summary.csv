@@ -1,0 +1,4 @@
+n_docs,seed,nr_topics_found,npmi_coherence,topic_diversity
+2000,1,44,0.1351,0.8659
+2000,2,40,0.1326,0.865
+2000,3,42,0.1161,0.869

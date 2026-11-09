@@ -1,0 +1,8 @@
+BBC News reproduction -- evaluation metrics (nr_topics=k5)
+=======================================================
+Documents used:        2225
+Known categories:      5
+Topics found:          4
+Average NPMI coherence: 0.1660
+Topic diversity:        0.8250
+Seed:                   3

@@ -1,0 +1,7 @@
+run,judge,topics_judged,mean_rating,share_rating_3
+20newsgroups_topics_k10,hf:Qwen/Qwen2.5-3B-Instruct,9,2.111,0.222
+20newsgroups_topics_k50,hf:Qwen/Qwen2.5-3B-Instruct,49,2.571,0.633
+amazon_reviews_topics,hf:Qwen/Qwen2.5-3B-Instruct,42,2.5,0.5
+bbcnews_topics_k5,hf:Qwen/Qwen2.5-3B-Instruct,4,2.75,0.75
+trumptweets_topics_k10,hf:Qwen/Qwen2.5-3B-Instruct,9,2.556,0.556
+trumptweets_topics_k50,hf:Qwen/Qwen2.5-3B-Instruct,49,2.653,0.673

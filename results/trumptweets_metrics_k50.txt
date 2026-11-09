@@ -1,0 +1,12 @@
+Trump's tweets reproduction -- evaluation metrics (nr_topics=k50)
+============================================================
+Years included:        [2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018]
+Non-retweet tweets:    35200
+Topics found:          49
+Average NPMI coherence: -0.0268
+Topic diversity:        0.9347
+Seed:                   3
+
+NOTE: paper reports 44,253 tweets from 2009-2021; this archive
+only covers 2009-2018, so counts differ. This is disclosed honestly
+rather than claiming an exact match to the paper's dataset.

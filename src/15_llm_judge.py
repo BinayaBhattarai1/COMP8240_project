@@ -72,9 +72,12 @@ class Judge:
             import torch
             from transformers import AutoModelForCausalLM, AutoTokenizer
             self.tok = AutoTokenizer.from_pretrained(model)
-            self.model = AutoModelForCausalLM.from_pretrained(
-                model, torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32,
-                device_map="auto")
+            dtype = torch.float16 if torch.cuda.is_available() else torch.float32
+            try:   # newer transformers call it dtype, older ones torch_dtype
+                self.model = AutoModelForCausalLM.from_pretrained(model, dtype=dtype, device_map="auto")
+            except TypeError:
+                self.model = AutoModelForCausalLM.from_pretrained(model, torch_dtype=dtype,
+                                                                  device_map="auto")
         elif provider == "anthropic":
             import anthropic
             self.client = anthropic.Anthropic()
@@ -91,11 +94,14 @@ class Judge:
             return r.content[0].text
         import torch
         msgs = [{"role": "user", "content": prompt}]
-        ids = self.tok.apply_chat_template(msgs, add_generation_prompt=True,
-                                           return_tensors="pt").to(self.model.device)
+        # Build the prompt as text, then tokenise: works the same on old and new
+        # transformers (newer versions return a dict from apply_chat_template).
+        text = self.tok.apply_chat_template(msgs, add_generation_prompt=True, tokenize=False)
+        enc = self.tok(text, return_tensors="pt").to(self.model.device)
         with torch.no_grad():
-            out = self.model.generate(ids, max_new_tokens=max_new_tokens, do_sample=False)
-        return self.tok.decode(out[0, ids.shape[1]:], skip_special_tokens=True)
+            out = self.model.generate(**enc, max_new_tokens=max_new_tokens, do_sample=False,
+                                      pad_token_id=self.tok.eos_token_id)
+        return self.tok.decode(out[0, enc["input_ids"].shape[1]:], skip_special_tokens=True)
 
 
 def parse_rating(text):
